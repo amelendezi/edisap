@@ -1,2 +1,2 @@
 <?php
-header('Location: edisap.com/index.php');
+header('Location: edisap.com/bootstrap.php');

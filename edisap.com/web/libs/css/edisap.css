@@ -1,0 +1,13 @@
+#loading-indicator {
+  position: relative;  
+  width: 20px;
+  height: 20px;
+}
+
+.success-message {
+    color: seagreen;
+}
+
+.initial-message {
+    color: darkgrey;
+}
