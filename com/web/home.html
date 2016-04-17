@@ -17,7 +17,7 @@
     <body>               
         <!-- Panel Container-->
         <div id="level1" class="container">            
-            <h1>Web Client<small>Api Call Implementation</small></h1>            
+            <h1>Web Client Sample <small>Query Implementation API</small></h1>            
             <!-- Panel -->
             <div class="panel panel-success">                
                 <!-- Panel Heading -->
@@ -33,19 +33,17 @@
                     <!-- Table -->
                     <table class="table table-hover">
                         <thead>
-                            <tr>
-                                <th>Id</th>
+                            <tr>                                
                                 <th>Name</th>
                                 <th>Owner</th>
                                 <th>Resident</th>
                             </tr>                        
                         </thead>
                         <tbody data-bind="foreach: tableViewModel.apartments">
-                            <tr>
-                                <td><span data-bind="text: Id"></span></td>
-                                <td><span data-bind="text: Name"></span></td>
-                                <td><span data-bind="text: Owner"></span></td>
-                                <td><span data-bind="text: Resident"></span></td>                                                                
+                            <tr>                                
+                                <td><span data-bind="text: name"></span></td>
+                                <td><span data-bind="text: owner"></span></td>
+                                <td><span data-bind="text: resident"></span></td>                                                                
                             </tr>                            
                         </tbody>              
                     </table> <!-- End Table -->   

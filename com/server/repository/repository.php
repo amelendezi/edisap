@@ -71,7 +71,7 @@ class Repository {
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
-    }
+    }       
 
     /**
      * Removes object given its instance id.

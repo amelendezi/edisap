@@ -1,11 +1,12 @@
 <?php
 
-namespace src\repository\models;
+namespace server\repository\models;
 
-use src\repository\Storable as Storable;
+use server\repository\Storable as Storable;
 
 /**
- * Description of apartment
+ * Description of apartments
+ * 
  * @author amelendezi
  */
 class Apartment extends Storable{
