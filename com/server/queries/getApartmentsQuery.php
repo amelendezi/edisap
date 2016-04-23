@@ -2,23 +2,22 @@
 
 namespace server\queries;
 
-use server\repository\models\Apartment as Apartment;
 use server\repository\Repository as Repository;
 use server\repository\StorableType as StorableType;
 use server\repository\Where as Where;
 
 class GetApartmentsQuery {
     
-    function Handle()
+    function Handle($params)
     {        
         // Create a repository
-        $repository = new Repository();
+        $repository = new Repository();        
         
         // Define query where condition
-        $where = new Where();
-        $where->Equals("building_instanceId", "0000-0000-0000");                        
+        $where = new Where();               
+        $where->Equals("building_instanceId", $params['building_instanceId']);                        
         
-        // Return request result
-        return $repository->GetMultiple(StorableType::Apartment, $where);                
+        // Return request result                
+        return $repository->GetMultiple(StorableType::Apartment, $where);
     }
 }

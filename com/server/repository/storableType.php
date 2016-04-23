@@ -1,6 +1,7 @@
 <?php
 
 namespace server\repository;
+
 /**
  * Description of objectType
  *
@@ -8,4 +9,5 @@ namespace server\repository;
  */
 abstract class StorableType {
     const Apartment = "apartment";
+    const Building = "building";
 }
