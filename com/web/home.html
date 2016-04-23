@@ -22,7 +22,7 @@
             <div class="panel panel-success">                
                 <!-- Panel Heading -->
                 <div class="panel-heading">
-                    <h4 class="panel-title">Table of Apartments</h4>                
+                    <h4 class="panel-title"><span data-bind="text: buildingViewModel.name">Name</span></h4>                
                 </div> <!-- End Panel Heading -->                
                 <!-- Panel Body -->
                 <div class="panel-body">                                                            
@@ -39,7 +39,7 @@
                                 <th>Resident</th>
                             </tr>                        
                         </thead>
-                        <tbody data-bind="foreach: tableViewModel.apartments">
+                        <tbody data-bind="foreach: apartmentsViewModel.apartments">
                             <tr>                                
                                 <td><span data-bind="text: name"></span></td>
                                 <td><span data-bind="text: owner"></span></td>
@@ -55,12 +55,16 @@
             <!-- Buttons Row -->
             <div class="row">
                 <!-- Left Column -->
-                <div class="col-lg-6">                    
-                    <span><button class="btn btn-primary" data-bind="click: srvRequestGetApartments">Server Request</button></span>                    
+                <div class="col-lg-4">                    
+                    <span><button class="btn btn-primary" data-bind="click: serverRequestBuilding1">Building 1</button></span>                    
                 </div> <!-- End Left Column-->
+                <!-- Center Column -->
+                <div class="col-lg-4">                    
+                    <span><button class="btn btn-info" data-bind="click: serverRequestBuilding2">Building 2</button></span>                    
+                </div> <!-- End Center Column-->                
                 <!-- Right Column -->
-                <div class="col-lg-6">                    
-                    <span><button class="btn btn-danger pull-right" data-bind="click: tableViewModel.clear">Clear</button></span>
+                <div class="col-lg-4">                    
+                    <span><button class="btn btn-danger pull-right" data-bind="click: viewModel.clear">Clear</button></span>
                 </div> <!-- End Right Column-->                    
             </div> <!-- End Buttons Row -->
         </div> <!-- End Buttons Row Container-->
