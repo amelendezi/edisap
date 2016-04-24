@@ -1,2 +1,2 @@
 <?php
-header('Location: web/home.html');
+header('Location: web/index.html');

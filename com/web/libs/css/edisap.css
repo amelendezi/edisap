@@ -11,3 +11,7 @@
 .initial-message {
     color: darkgrey;
 }
+
+#header {
+    margin-top: 10px;
+}
